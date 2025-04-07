@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Other head elements -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+
+
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle dark/light mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <header>
+        <div class="logo">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Rounded square background -->
+            <rect width="40" height="40" rx="8" fill="currentColor" />
+          
+            <!-- Stylized 'P' shape cutout -->
+            <path d="M14 12H18C20.2 12 22 13.8 22 16C22 18.2 20.2 20 18 20H16V28H14V12ZM16 14V18H18C19.1 18 20 17.1 20 16C20 14.9 19.1 14 18 14H16Z" fill="var(--background)" />
+          </svg>
+
+          <div class="logo-text">
+            <span>prabin</span>
+            <span>khadka</span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero-content">
+            <h1 class="title" style="font-weight: 800; background: linear-gradient(90deg, #ff0080, #7928ca); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+              Full-Stack Developer
+            </h1>
+          
+            <div class="description">
+              <p style="font-weight: 600; font-size: 1.1rem; background: linear-gradient(90deg, #ff4d4d, #ffcc00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                I'm currently building scalable and high-performance web applications using Django and Next.js, combining robust backend logic with sleek, responsive UIs.
+              </p>
+          
+              <p style="font-weight: 500; font-size: 1.05rem; background: linear-gradient(90deg, #f57d0c, #e40d0d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                With a strong foundation in Python, HTML/CSS, Docker, and Redis, I architect end-to-end solutions that are fast, secure, and production-ready. I love crafting clean code, automating workflows, and solving real-world problems through full-stack engineering.
+              </p>
+          
+              <a href="#contact" class="cta" style="display: inline-block; margin-top: 1rem; font-weight: bold; font-size: 1rem; background: linear-gradient(90deg, #f7971e, #ffd200); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                GET IN TOUCH <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+          
+
+<div class="grid-background">
+  <div class="grid-overlay"></div>
+  <div class="profile-container">
+    <img src="image/photo1.png" alt="Full Stack Developer Profile" class="profile-image">
+
+    <div class="badge design-strategy">
+      <div class="badge-content">
+        <div class="badge-icon">⚙⚙</div>
+        <div class="badge-title">DEV<br>STRATEGY</div>
+        <div class="badge-subtitle">ALIGNING<br>CODE → WITH<br>USER NEEDS</div>
+      </div>
+    </div>
+
+    <div class="badge ecomm">
+      <div class="badge-content">
+        <div class="badge-title">AI / ML · NLP</div>
+        <div class="badge-subtitle">⊕ PROJECTS</div>
+      </div>
+    </div>
+
+    <div class="badge motion">
+      <div class="badge-content">
+        <div class="badge-title">FULL-STACK &</div>
+        <div class="badge-subtitle">INTERACTION<br>→ FUNCTION</div>
+      </div>
+    </div>
+
+    <div class="badge ux" style="background-color: #d6da19; color: white;">
+      <div class="badge-content">
+        <div class="badge-title">USER<br>EXPER—IENCE</div>
+        <div class="badge-subtitle">PROJECTS©</div>
+      </div>
+    </div>
+    
+    </div>
+
+    <div class="badge branding">
+      <div class="badge-content">
+        <div class="badge-title">DOCKER &</div>
+        <div class="badge-subtitle">DEPLOYMENT<br>LINUX STACK ✶</div>
+      </div>
+    </div>
+
+    <div class="badge usability">
+      <div class="badge-content">
+        <div class="badge-icon">⊕</div>
+        <div class="badge-title">BACKEND LOGIC</div>
+        <div class="badge-subtitle">DJANGO · NODEJS</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </section>
+      
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">SELECTED WORK</h2>
+              <p class="section-subtitle">Recent projects I've worked on</p>
+            </div>
+      
+            <div class="work-grid">
+              <div class="work-item">
+                <div class="work-image">
+                  <img src="image/bala-ollama.webp" alt="Project 1">
+                  <div class="work-overlay">
+                    <div class="work-tag">Ollama-Running-DeepSeek-R1-Locally </div>
+                    <a href="https://github.com/prabinKh/Ollama-Running-DeepSeek-R1-Locally" class="work-link">View Project →</a>
+                  </div>
+                </div>
+                <h3 class="work-title">Ollama-Running-DeepSeek-R1-Locally </h3>
+                <p class="work-description">  Implemented a local RAG-based (Retrieval-Augmented Generation) Q&A system using Ollama running DeepSeek R1. Enabled seamless document uploading and intelligent question-answering by integrating local language models with efficient vector search, ensuring fast and private access to knowledge from user-provided content.
+                </p>
+              </div>
+      
+              <div class="work-item">
+                <div class="work-image">
+                  <img src="image/docker_image.jpg" alt="Project 2">
+                  <div class="work-overlay">
+                    <div class="work-tag">Docker</div>
+                    <a href="https://github.com/prabinKh/Docker-Nginx-Django" class="work-link">View Project →</a>
+                  </div>
+                </div>
+                <h3 class="work-title">Docker, Nginx, MySQL,django  project , Gunicorn</h3>
+                <p class="work-description">  Engineered and deployed a scalable web application using Django, containerized with Docker, served via Gunicorn behind Nginx, and powered by a MySQL database. Designed the infrastructure for performance, security, and ease of deployment across development and production environments.
+                </p>
+              </div>
+      
+              <div class="work-item">
+                <div class="work-image">
+                  <img src="image/images.jpeg" alt="Project 3">
+                  <div class="work-overlay">
+                    <div class="work-tag">Movie Recommender Systems</div>
+                    <a href="https://github.com/prabinKh/moviesecommendersystem" class="work-link">View Project →</a>
+                  </div>
+                </div>
+                <h3 class="work-title">Movie Recommender Systems</h3>
+                <p class="work-description">    Developed a movie recommendation system using Django and trained machine learning models on the IMDb dataset. Implemented user-friendly HTML interfaces for browsing and receiving personalized suggestions. Leveraged collaborative filtering and content-based approaches to deliver accurate, real-time recommendations based on user preferences and movie metadata.
+                  
+                </p>
+              </div>
+            </div>
+      
+            <div class="section-cta">
+              <a href="https://github.com/prabinKh?tab=repositories" class="button">View All Projects</a>
+            </div>
+          </div>
+        </section>
+      
+        <!-- About Section -->
+        <section id="about" class="about-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">ABOUT ME</h2>
+              <p class="section-subtitle">My journey and passion for full stack development</p>
+            </div>
+        
+            <div class="about-content">
+              <div class="about-image">
+                <img src="image/photo3.jpg" alt="Prabin Khadka">
+                <div class="about-badge">Full Stack<br>Developer</div>
+              </div>
+        
+              <div class="about-text">
+                <p>Hi! I’m Prabin Khadka, a passionate full stack developer with a strong interest in Artificial Intelligence. I specialize in building complete, scalable web applications and integrating AI-powered features using modern technologies across the stack.</p>
+        
+                <p>With hands-on experience in Python, Django, React, TypeScript, and containerized deployments using Docker, I love turning ideas into real-world solutions—from backend APIs to frontend UIs. I'm also exploring advanced AI models and NLP techniques in my side projects.</p>
+        
+                <h3>My Development Process</h3>
+                <ul class="process-list">
+                  <li>
+                    <span class="process-number">01</span>
+                    <div class="process-content">
+                      <h4>Planning & Requirements</h4>
+                      <p>Understanding the scope, objectives, and tech requirements of the project</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="process-number">02</span>
+                    <div class="process-content">
+                      <h4>Architecture & Setup</h4>
+                      <p>Designing the project structure, setting up Docker, databases, and environments</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="process-number">03</span>
+                    <div class="process-content">
+                      <h4>Development</h4>
+                      <p>Building features across frontend and backend with efficient, clean code</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="process-number">04</span>
+                    <div class="process-content">
+                      <h4>Testing & Deployment</h4>
+                      <p>Writing tests, debugging, and deploying the application using CI/CD pipelines</p>
+                    </div>
+                  </li>
+                </ul>
+        
+                <div class="skills">
+                  <h3>Skills & Tools</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Shell Scripting</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">BLOG</h2>
+              <p class="section-subtitle">Exploring tech, AI, and full stack development</p>
+            </div>
+        
+            <div class="blog-grid">
+              <article class="blog-post">
+                <div class="blog-image">
+                  <img src="image/1716019085280.jpeg" alt="Blog post 1">
+                  <div class="blog-date">APR 01, 2025</div>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">From Docker to Deployment: My Full Stack Workflow</h3>
+                  <p class="blog-excerpt">A walkthrough of how I structure, containerize, and deploy modern web applications using Django, React, and Docker.</p>
+                  <a href="https://www.qservicesit.com/docker-containers-to-deploy-your-full-stack" class="blog-link">Read More →</a>
+                </div>
+              </article>
+        
+              <article class="blog-post">
+                <div class="blog-image">
+                  <img src="image/How_to_start_an_AI_project.webp" alt="Blog post 2">
+                  <div class="blog-date">MAR 14, 2025</div>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">Getting Started with AI Projects as a Developer</h3>
+                  <p class="blog-excerpt">My journey into AI and machine learning—from Jupyter notebooks to building my own movie recommender system.</p>
+                  <a href="https://www.projectpro.io/article/how-to-start-an-ai-project/1049" class="blog-link">Read More →</a>
+                </div>
+              </article>
+        
+              <article class="blog-post">
+                <div class="blog-image">
+                  <img src="image/bpe_schematics.svg" alt="Blog post 3">
+                  <div class="blog-date">FEB 22, 2025</div>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">Bringing NLP to Life with Byte Pair Encoding</h3>
+                  <p class="blog-excerpt">An introduction to Byte Pair Encoding (BPE) and how it improves tokenization in natural language processing tasks.</p>
+                  <a href="https://guillaume-be.github.io/2021-09-16/byte_pair_encoding" class="blog-link">Read More →</a>
+                </div>
+              </article>
+            </div>
+        
+            <div class="section-cta">
+              <a href="#" class="button">View All Articles</a>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">GET IN TOUCH</h2>
+              <p class="section-subtitle">Let's collaborate on your next project</p>
+            </div>
+      
+            <div class="contact-content">
+              <div class="contact-info">
+                <div class="contact-item">
+                  <h3>Email</h3>
+                  <p><a href="mailto:hello@devantaebison.com">Djangoforgithub@gmail.com</a></p>
+                </div>
+      
+                <div class="contact-item">
+                  <h3>Location</h3>
+                  <p>Nepal,Kathmandu, Madhyapur Thimi</p>
+                </div>
+      
+                <div class="contact-item">
+                  <h3>Social</h3>
+                  <div class="social-links">
+                    <a href="https://github.com/prabinKh/" class="social-link">Github</a>
+                    <!-- <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Twitter</a> -->
+                    <a href="https://www.instagram.com/p_r_a_bin_khadka/" class="social-link">Instagram</a>
+                  </div>
+                </div>
+      
+                <div class="contact-availability">
+                  <div class="availability-badge">AVAILABLE FOR FREELANCE</div>
+                  <p>Currently accepting new projects for 2025</p>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <form id="contactForm"  method="POST">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" required>
+                  </div>
+          
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+          
+                  <button type="submit" class="submit-button">Send Message</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect width="40" height="40" rx="8" fill="currentColor" />
+
+  <!-- Stylized 'P' shape cutout -->
+  <path d="M14 12H18C20.2 12 22 13.8 22 16C22 18.2 20.2 20 18 20H16V28H14V12ZM16 14V18H18C19.1 18 20 17.1 20 16C20 14.9 19.1 14 18 14H16Z" fill="var(--background)" />
+</svg>
+
+            <span>Prabin Khadka</span>
+          </div>
+      
+          <div class="footer-nav">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+      
+          <div class="footer-copyright">
+          </div>
+        </div>
+      </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>
